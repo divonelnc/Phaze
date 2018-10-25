@@ -718,7 +718,7 @@ void AShooterCharacter::StopWeaponFire()
 
 bool AShooterCharacter::CanFire() const
 {
-	return IsAlive();
+	return IsAlive() && AllowShoot;
 }
 
 bool AShooterCharacter::CanReload() const
