@@ -396,6 +396,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated, Category = Health)
 	float Health;
 
+	// Allow or block shooting
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated, Category = Input)
+	bool AllowShoot = true;
+
 	/** Take damage, handle death */
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, class AActor* DamageCauser) override;
 
